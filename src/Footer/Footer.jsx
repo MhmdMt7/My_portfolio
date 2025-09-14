@@ -1,3 +1,4 @@
+import  "./Footer.css"
 export default function Footer() {
   return (
     <footer className="bg-neutral-900 py-6">

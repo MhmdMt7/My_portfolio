@@ -2,7 +2,7 @@ import SectionOne from "./SectionOne/SectionOne";
 import SectionThree from "./SectionThree/SectionThree";
 import SectionTow from "./SectionTow/SectionTow";
 import SectionFoor from "./Contact/SectionFoor";
-import Footer from "./Footer/footer";
+import Footer from "./Footer/Footer";
 export default function App() {
   return (
     <div className="App">
