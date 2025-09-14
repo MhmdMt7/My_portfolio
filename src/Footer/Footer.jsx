@@ -1,80 +1,14 @@
-import "./SectionOne.css";
-import my from "./my.jpg";
-import TextType from "./TextType";
-import { GiHand } from "react-icons/gi";
-import CountUp from "react-countup";
-import { motion } from "framer-motion";
-
-export default function SectionOne() {
+export default function Footer() {
   return (
-    <section className="flex items-center justify-center h-full w-full bg-neutral-900">
-      <div className="w-full h-full flex flex-col items-center justify-center">
-        <div className="SectionOne container grid grid-cols-1 md:grid-cols-2 justify-center  gap-10 p-15">
-          <div className="my 
-                shadow-[0_8px_25px_rgba(239,68,68,0.6)] flex flex-col items-center justify-center w-[250px] bg-neutral-800 gap-2 p-5 rounded-[15px] ">
-            <div
-              className="imgMy w-auto h-auto rounded-[15px] overflow-hidden  bg-white flex items-center justify-center 
-             transition duration-300 
+    <footer className="bg-neutral-900 py-6">
+      <div className="container mx-auto max-w-screen-xl px-4">
+        <div className="w-full h-0.5 bg-gray-300 mb-6"></div>
 
-             hover:shadow-[0_12px_35px_rgba(59,130,246,0.9)]"
-            >
-              <img
-                className="  rounded-lg shadow-2xl transition-transform duration-300 hover:scale-105 pointer-coarse"
-                src={my}
-                alt="my"
-              />
-            </div>
-            <div className="contactCart flex flex-col items-center justify-center font-bold  text-white gap-1">
-              <h4 className="flex items-center gap-2">
-                Available For work{" "}
-                <span>
-                  <div class="overflow-x-visible relative w-10 h-10 overflow-y-clip group text-center">
-                    <div class="flex justify-center items-center w-10 h-10 rounded-full bg-yellow-300 transition-all duration-300 absolute top-0 group-hover:scale-[.60] group-hover:origin-top text-white">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        viewBox="0 0 26.463 26.647"
-                      >
-                        <g
-                          id="Grupo_3793"
-                          data-name="Grupo 3793"
-                          transform="translate(1.5 1.5)"
-                        >
-                          <path
-                            id="Trazado_28219"
-                            data-name="Trazado 28219"
-                            d="M7,10V24.188"
-                            transform="translate(-1.088 -0.541)"
-                            fill="none"
-                            stroke="#000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="3"
-                          ></path>
-                          <path
-                            id="Trazado_28220"
-                            data-name="Trazado 28220"
-                            d="M17.37,6.587l-1.182,4.871h6.893a2.365,2.365,0,0,1,2.27,3.027L22.6,23.944a2.365,2.365,0,0,1-2.27,1.7H4.365A2.365,2.365,0,0,1,2,23.282V13.823a2.365,2.365,0,0,1,2.365-2.365H7.628a2.365,2.365,0,0,0,2.116-1.312L13.823,2A3.7,3.7,0,0,1,17.37,6.587Z"
-                            transform="translate(-2 -2)"
-                            fill="none"
-                            stroke="#000"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="3"
-                          ></path>
-                        </g>
-                      </svg>
-                    </div>
-                    <div className="absolute text-white font-bold -bottom-10 left-1/2 text-sm text-center text-black whitespace-nowrap transition-all duration-300 transform -translate-x-1/2 group-hover:bottom-0">
-                      Like
-                    </div>
-                  </div>
-                </span>{" "}
-              </h4>
-              <h1 className="text-3xl hover:text-shadow-2xs hover:text-shadow-amber-500">
-                Mhmd Tolba
-              </h1>
+        <div className="flex flex-col md:flex-row items-center justify-between w-full">
+          <h1 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-0">
+            Mhmd Tolba
+          </h1>
+
           <div className="iconsMy flex gap-3 pt-5">
             <span>
               <section class="flex justify-center items-center">
@@ -210,72 +144,8 @@ export default function SectionOne() {
               </section>
             </span>
           </div>
-            </div>
-          </div>
-          <div className="contactMy  flex flex-col  text-white gap-5 p-15">
-            <p className="flex items-center gap-2 text-shadow-gray-700  transition-transform duration-300 hover:scale-90 hover:text-3xl ">
-              Say Hallo <span className=""></span>
-              <GiHand className="text-amber-400" />
-            </p>
-            <h1 className="text-3xl font-bold text-white text-shadow-gray-700  transition-transform duration-300 hover:scale-90 hover:text-3xl">
-              I’m Eng_Mhmd Tolba,
-            </h1>
-            <span>
-              <TextType
-                text={[
-                  "Eng_Mhmd Tolba",
-                  " Front-End Developer",
-                  "IT Support / Helpdesk",
-                  "Happy coding!",
-                ]}
-                typingSpeed={75}
-                pauseDuration={1500}
-                showCursor={true}
-                cursorCharacter="|"
-                textColors={["#facc15", "#22d3ee", "#f87171", " #B6C9CF "]}
-                className="text-3xl font-bold"
-              />
-            </span>
-            <h2 className="text-3xl font-bold text-white">
-              Based in Eng_Abdel Fattah and Eng_ Ali Elsese __ (eraa Soft
-              Company)
-            </h2>
-            <p className="hover:text-shadow-2xs hover:text-shadow-blue-700 ">
-              I specialize in creating clean, user-friendly digital experiences
-              by blending creativity with functionality. With a strong
-              background in interactive design, I focus on crafting designs that
-              not only look great but also provide smooth and engaging user
-              interactions, helping ideas come to life seamlessly.
-            </p>
-          </div>
-        </div>
-        <div className="down container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 items-center justify-around  font-bold  gap-10 p-5 w-full">
-          <div className="flex flex-col items-center justify-center text-white gap-5 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:text-blue-600 hover:font-extrabold">
-            <span className="text-3xl  hover:font-extrabold hover:text-6xl">
-              <CountUp end={13} duration={10} />+
-            </span>
-            <p className="text-gray-400">Completed Projects</p>
-          </div>
-          <div className="flex flex-col items-center justify-center text-white gap-5 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:text-blue-600 hover:font-extrabold">
-            <span className="text-3xl hover:font-extrabold hover:text-6xl">
-              <CountUp end={2} duration={7} />+
-            </span>
-            <p className="text-gray-400">Years Of Experience</p>
-          </div>
-          <div className="flex flex-col items-center justify-center text-white gap-5 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:text-blue-600 hover:font-extrabold">
-            <span className="text-3xl  hover:font-extrabold hover:text-6xl">
-              <CountUp end={15} duration={10} />+
-            </span>
-            <p className="text-gray-400">Happy Cilents</p>
-          </div>
-          <div className="flex flex-col items-center justify-center text-white gap-5 rounded-lg shadow-lg transition-transform duration-300 hover:scale-105 hover:text-blue-600 hover:font-extrabold ">
-            <span className="text-3xl  hover:font-extrabold hover:text-6xl ">
-              <CountUp end={6} duration={10} />+
-            </span>
-            <p className="text-gray-400">Awards Received</p>
-          </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 }
