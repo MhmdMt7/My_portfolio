@@ -5,7 +5,7 @@ export default function Footer() {
         <div className="w-full h-0.5 bg-gray-300 mb-6"></div>
 
         <div className="flex flex-col md:flex-row items-center justify-between w-full">
-          <h1 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-0">
+          <h1 className="text-2xl md:text-5xl font-bold text-white mb-4 md:mb-0">
             Mhmd Tolba
           </h1>
 
