@@ -23,20 +23,19 @@ export default function Navbar() {
   }, []);
 
   return (
-    <nav 
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        scrolled ? "bg-neutral-900/80 backdrop-blur-md py-4 shadow-lg" : "bg-transparent py-6"
-      }`}
+    <nav
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${scrolled ? "bg-neutral-900/80 backdrop-blur-md py-4 shadow-lg" : "bg-transparent py-6"
+        }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
-        <motion.a 
+        <motion.a
           href="#home"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           className="text-2xl font-bold text-white tracking-tighter"
         >
-          Mhmd <span className="text-amber-500">Tolba.</span>
+          Eng. Mhmd <span className="text-amber-500">Tolba</span>
         </motion.a>
 
         {/* Desktop Menu */}
@@ -64,7 +63,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
-          <button 
+          <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-white p-2"
           >

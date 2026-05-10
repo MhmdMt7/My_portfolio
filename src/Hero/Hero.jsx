@@ -9,7 +9,7 @@ import { FaDownload } from 'react-icons/fa';
 
 export default function Hero() {
   const cardRef = useRef(null);
-  
+
   // Motion values for Tilt Effect
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -46,11 +46,11 @@ export default function Hero() {
   return (
     <section id="home" className="flex items-center justify-center min-h-screen w-full bg-neutral-900 px-6 py-20 overflow-hidden">
       <div className="container mx-auto flex flex-col items-center justify-center gap-16">
-        
+
         {/* Profile Card with 3D Tilt & Floating Image */}
         <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-12 w-full max-w-6xl">
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8 }}
@@ -69,21 +69,21 @@ export default function Hero() {
             >
               {/* Glowing Background */}
               <div className="absolute -inset-1 bg-gradient-to-r from-amber-500 to-yellow-300 rounded-[2rem] blur opacity-25 group-hover:opacity-60 transition duration-500"></div>
-              
-              <div 
+
+              <div
                 style={{ transform: "translateZ(50px)" }}
                 className="relative bg-neutral-800 p-6 rounded-[2rem] shadow-2xl border border-neutral-700/50 max-w-[320px]"
               >
                 {/* Image Container with Floating Animation */}
-                <motion.div 
-                   animate={{ y: [0, -10, 0] }}
-                   transition={{ 
-                     duration: 4, 
-                     repeat: Infinity, 
-                     ease: "easeInOut" 
-                   }}
-                   style={{ transform: "translateZ(80px)" }}
-                   className="overflow-hidden rounded-2xl bg-gradient-to-b from-neutral-700 to-neutral-900 mb-6 border border-neutral-600/30 shadow-inner"
+                <motion.div
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: "easeInOut"
+                  }}
+                  style={{ transform: "translateZ(80px)" }}
+                  className="overflow-hidden rounded-2xl bg-gradient-to-b from-neutral-700 to-neutral-900 mb-6 border border-neutral-600/30 shadow-inner"
                 >
                   <img
                     className="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-110"
@@ -91,13 +91,13 @@ export default function Hero() {
                     alt="Mhmd Tolba"
                   />
                 </motion.div>
-                
-                <div 
+
+                <div
                   style={{ transform: "translateZ(50px)" }}
                   className="text-center space-y-4"
                 >
                   <div>
-                    <h1 className="text-2xl font-bold text-white mb-1 tracking-tight">Mhmd Tolba</h1>
+                    <h1 className="text-2xl font-bold text-white mb-1 tracking-tight">Eng.Mhmd Tolba</h1>
                     <p className="text-amber-500 text-sm font-medium flex items-center justify-center gap-2">
                       <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
                       Available for work
@@ -124,7 +124,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Intro Text */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -134,10 +134,10 @@ export default function Hero() {
               <span>Welcome to my Digital Space</span>
               <GiHand className="animate-bounce" />
             </div>
-            
+
             <div className="space-y-4">
               <h1 className="text-5xl md:text-7xl font-black leading-tight tracking-tighter">
-                I'm <span className="text-amber-500">Mhmd Tolba</span>
+                I'm <span className="text-amber-500">Eng.Mhmd Tolba</span>
               </h1>
               <div className="h-12">
                 <TextType

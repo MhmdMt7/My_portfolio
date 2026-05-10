@@ -1,9 +1,17 @@
-import { 
-  FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, 
+import Hospital from './assets/Hospital.png';
+import BookShop from './assets/BookShop.png';
+import Booking from './assets/Booking.png';
+import pos from './assets/pos.png';
+import six from './assets/six.png';
+import Ecommerce from './assets/E-commerce.png';
+
+
+import {
+  FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub,
   FaLinkedin, FaInstagram, FaYoutube, FaFacebook,
-  FaBootstrap, FaGitAlt, FaNpm, FaFigma
+  FaBootstrap, FaGitAlt, FaNpm, FaFigma, FaWordpress
 } from 'react-icons/fa';
-import { SiTailwindcss, SiNextdotjs, SiVite, SiPostman, SiTypescript } from 'react-icons/si';
+import { SiTailwindcss, SiNextdotjs, SiVite, SiPostman, SiTypescript, SiFirebase, SiStrapi } from 'react-icons/si';
 
 // Social Media Links
 export const SOCIAL_LINKS = [
@@ -37,6 +45,9 @@ export const SKILL_CATEGORIES = [
       { id: 11, name: 'npm', icon: FaNpm, color: '#CB3837', desc: 'Package Management' },
       { id: 12, name: 'Postman', icon: SiPostman, color: '#FF6C37', desc: 'API Testing' },
       { id: 13, name: 'Figma', icon: FaFigma, color: '#F24E1E', desc: 'UI/UX Design' },
+      { id: 14, name: 'Firebase', icon: SiFirebase, color: '#FFCA28', desc: 'Backend & Hosting' },
+      { id: 15, name: 'Strapi', icon: SiStrapi, color: '#4945FF', desc: 'Headless CMS' },
+      { id: 16, name: 'WordPress', icon: FaWordpress, color: '#21759B', desc: 'CMS & Website Building' },
     ]
   }
 ];
@@ -53,25 +64,49 @@ export const STATS = [
 export const PROJECTS = [
   {
     id: 1,
-    title: 'Card Shop System',
-    tech: 'React • Tailwind CSS',
-    image: '/src/Projects/one.png',
-    liveLink: 'https://project-system-1xsr.vercel.app/',
+    title: 'Hospital System',
+    tech: 'React • Tailwind CSS  • framer-motion • api',
+    image: Hospital,
+    liveLink: '#',
     codeLink: '#',
   },
   {
     id: 2,
     title: 'E-Commerce Platform',
-    tech: 'React • Context API',
-    image: '/src/Projects/two.png',
+    tech: 'React • Tailwind CSS  • framer-motion • api',
+    image: Ecommerce,
     liveLink: '#',
     codeLink: '#',
   },
   {
     id: 3,
-    title: 'Portfolio Website',
-    tech: 'Next.js • Framer Motion',
-    image: '/src/Projects/three.png',
+    title: 'BookShop Website',
+    tech: 'React • Tailwind CSS  • framer-motion • api',
+    image: BookShop,
+    liveLink: '#',
+    codeLink: '#',
+  },
+  {
+    id: 4,
+    title: 'pos System',
+    tech: 'Next.js • Tailwind CSS  • framer-motion • api',
+    image: pos,
+    liveLink: '#',
+    codeLink: '#',
+  },
+  {
+    id: 5,
+    title: 'Booking System',
+    tech: 'React • Tailwind CSS  • framer-motion • api',
+    image: Booking,
+    liveLink: '#',
+    codeLink: '#',
+  },
+  {
+    id: 6,
+    title: 'Coffee Shop Website',
+    tech: 'React • Tailwind CSS  • framer-motion • api',
+    image: six,
     liveLink: '#',
     codeLink: '#',
   },
