@@ -3,7 +3,7 @@ import BookShop from './assets/BookShop.png';
 import Booking from './assets/Booking.png';
 import pos from './assets/pos.png';
 import six from './assets/six.png';
-import Ecommerce from './assets/E-commerce.png';
+import Ecommerce from './assets/E-Commerce.png';
 
 
 import {
