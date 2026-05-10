@@ -72,7 +72,7 @@ export const PROJECTS = [
   },
   {
     id: 2,
-    title: 'E-Commerce Platform',
+    title: 'e-commerce Platform',
     tech: 'React • Tailwind CSS  • framer-motion • api',
     image: Ecommerce,
     liveLink: '#',
